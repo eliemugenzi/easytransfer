@@ -1,0 +1,267 @@
+@font-family:Segoe UI;
+@main-color:rgb(13, 93, 107);
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family: @font-family;
+}
+
+#showcase{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:80%;
+    height:50%;
+    padding:20px;
+    .welcome{
+        padding:20px;
+        background:@main-color;
+        margin:auto;
+        position:relative;
+        padding-left:20%;
+        .buttons{
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        p{
+            display: inline-block;
+        }
+    }
+    
+}
+
+.btn{
+    padding:10px 30px;
+    border:2px solid @main-color;
+    outline:none;
+    text-decoration: none;
+    color:#000;
+    background: #fff;
+    border-radius:7px;
+}
+
+.login-section{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    .login{
+        background: @main-color;
+        padding:40px;
+        h2{
+            text-align:center;
+        }
+        form{
+            .input-grp{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom:10px;
+                input{
+                    width:auto;
+                    height:30px;
+                    border-radius: 7px;
+                    outline:none;
+        
+                }
+            }
+        }
+    }
+}
+
+.register-area{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    width:40%;
+    .register{
+        background: @main-color;
+        padding:40px;
+        border-radius: 8px;
+        h2{
+            text-align:center;
+        }
+        form{
+            .input-grp{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom:10px;
+                input{
+                    height:30px;
+                    width:auto;
+                    border-radius:7px;
+                    outline:none;
+                }
+            }
+        }
+    }
+}
+
+input[type=submit]{
+    padding:10px 30px;
+    border:2px solid @main-color;
+    color:#000;
+    transform:translateX(120px);
+    margin-top:30px;
+    border-radius:7px;
+}
+.help{
+    a{
+        color:darken(@main-color,30%);
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+
+.response{
+    position: relative;
+    width:90%;
+    margin-bottom:30px;
+    padding:30px;
+    .success{
+        background:green;
+        height:35px;
+    }
+    .error{
+        background:lighten(#b71c1c,20%);
+        height:35px;
+        border-radius:7px;
+        padding:20px;
+        i{
+            text-align:center;
+        }
+    }
+}
+
+
+#create{
+    position:absolute;
+    top:30%;
+    left:0;
+    width:90%;
+    margin:auto 10%;
+    padding:17px;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    grid-gap:10px;
+    .trans{
+        h2{
+            text-align:center;
+        }
+        .user{
+            background:#ddd;
+            margin:auto 10%;
+            position: relative;
+            margin-bottom:15px;
+            display: flex;
+            justify-content: space-between;
+            padding:20px;
+    
+        }
+    }
+    .side{
+        h3{
+        }
+    }
+    
+}
+
+#new-deposit{
+    position: absolute;
+    top:30%;
+    left:0;
+    width:90%;
+    margin:auto 10%;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-gap:10px;
+    .deposit-form{
+        padding:10px;
+        background:@main-color;
+        color:#fff;
+        .input-grp{
+            display: flex;
+            justify-content: space-between;
+            
+            input{
+                height:30px;
+                border-radius:7px;
+                font-family:@font-family;
+                margin-right:30px;
+            }
+        }
+    }
+}
+
+#customer-home{
+    position:absolute;
+    top:30%;
+    left:0;
+    width:90%;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-gap:5px;
+    margin:auto 10%;
+    .side{
+        background:#eee;
+        padding:10px;
+        .balance{
+            display: block;
+            margin-bottom:20px;
+        }
+    }
+    .customer-list{
+        .customer{
+            background:#ddd;
+            margin:auto 10%;
+            position: relative;
+            margin-bottom:15px;
+            display: flex;
+            justify-content: space-between;
+            padding:20px;
+        }
+    }
+}
+
+#transfer-section{
+    position: absolute;
+    top:30%;
+    left:0;
+    margin:auto 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:10px;
+    .side{
+        background:#eee;
+        padding:30px;
+        .balance{
+           display: block;
+           margin-bottom:20px;       
+        }
+    }
+
+    .transfer-area{
+        padding:20px;
+        background: @main-color;
+        color:#fff;
+        h2{
+            text-align:center;
+        }
+        .input-grp{
+            display: flex;
+            justify-content: space-between;
+            margin-right:30px;
+            input{
+                height:30px;
+                border-radius:7px;
+            }
+
+        }
+    }
+}

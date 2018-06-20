@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Deposit Transaction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+</head>
+<body>
+    <section id="new-deposit">
+        <div class="side">
+            <h3><%=me.names%></h3>
+            <a href="/agent/logout/" class="btn">Log Out</a>
+        </div>
+        <div class="deposit-form">
+            <h2>Deposit to <%=customer.names%>'s account</h2>
+            <form action="" method="post">
+                <div class="input-grp">
+                    <label for="">Amount:</label>
+                    <input type="number" name="amount" placeholder="Enter amount to deposit" required>
+                </div>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

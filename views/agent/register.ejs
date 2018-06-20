@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register as an Agent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+</head>
+<body>
+   <section class="register-area">
+       <div class="register">
+           <h2>Register as Agent</h2>
+           <div class="response">
+                <%  if(error){%>
+                    <div class="error">
+                        <i><%=error%></i>
+                    </div>
+                <%}%>
+           </div>
+           <form action="" method="post">
+               <div class="input-grp">
+                   <label for="">Names</label>
+                   <input type="text" name="names" placeholder="Your Full Names" required>
+               </div>
+               <div class="input-grp">
+                   <label for="">Email</label>
+                   <input type="email" name="email" placeholder="Your Email" required>
+               </div>
+               <div class="input-grp">
+                   <label for="">Password</label>
+                   <input type="password" name="password" placeholder="Choose password">
+               </div>
+               <div class="input-grp">
+                   <label for="">Confirm password</label>
+                   <input type="password" name="repeat" placeholder="Confirm Password">
+               </div>
+               <input type="submit" value="Register">
+               <p class="help">Already have an account? <a href="/agent/login/">Log In</a></p>
+           </form>
+       </div>
+   </section> 
+</body>
+</html>

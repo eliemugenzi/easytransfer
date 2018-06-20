@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login as Customer...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+</head>
+<body>
+    <section class="login-section">
+        <div class="login">
+            <h2>Login as Customer</h2>
+            <div class="response">
+                <%  if(error){%>
+                    <div class="error">
+                        <i><%=error%></i>
+                    </div>
+                <%}%>
+            </div>
+            <form action="" method="POST">
+                <div class="input-grp">
+                    <label for="">Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-grp">
+                    <label for="">Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Log In">
+                <p class="help">Don't you have an account yet? <a href="/customer/register/">Register</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

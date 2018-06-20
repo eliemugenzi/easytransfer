@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agent Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+</head>
+<body>
+  <section id="create">
+      <div class="side">
+          <h3><%=me.names%></h3>
+          <a href="/agent/logout/" class="btn">Log Out</a>
+      </div>
+      <div class="trans">
+            <h2>New Deposit Transaction</h2>
+
+            <% for (let a=0; a<customers.length;a++){%>
+                <div class="user">
+                    <strong><%=customers[a].names%></strong>
+                    <a href="/agent/saveamount/<%=customers[a]._id%>" class="btn">Deposit</a>
+                </div>
+            <%}%>
+      </div>
+      
+  </section>  
+</body>
+</html>
